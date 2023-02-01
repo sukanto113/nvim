@@ -9,4 +9,4 @@ vim.keymap.set('n', '<c-l>', '<c-w>l')
 
 vim.keymap.set('n', '<s-l>', ':bnext<cr>')
 vim.keymap.set('n', '<s-h>', ':bprev<cr>')
-
+vim.keymap.set('n', '<s-c>', ':Bdelete<cr>')

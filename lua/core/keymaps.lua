@@ -10,7 +10,4 @@ vim.keymap.set('n', '<leader>l', '<c-w>l')
 vim.keymap.set('n', '<s-l>', ':bnext<cr>')
 vim.keymap.set('n', '<s-h>', ':bprev<cr>')
 vim.keymap.set('n', '<s-c>', ':Bdelete<cr>')
-vim.bo.tabstop = 2
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.expandtab = true
+vim.keymap.set('n', '<s-w>', ':w!<cr>')

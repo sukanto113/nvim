@@ -24,7 +24,12 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
-
+	use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+	}
 	-- Completion
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-nvim-lua'
@@ -53,6 +58,7 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
   }
+	-- use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'

@@ -54,3 +54,8 @@ require 'lspconfig'.sumneko_lua.setup {
 		},
 	},
 }
+require'lspconfig'.dartls.setup{
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
+

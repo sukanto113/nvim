@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {'lua', 'json'},
-  sync_install = false,
+  ensure_installed = {'lua', 'json', 'html'},
+  sync_install = true,
   auto_install = true,
   highlight = {
     enable = true,

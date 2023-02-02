@@ -16,8 +16,9 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
-  use 'moll/vim-bbye'  
+  use 'moll/vim-bbye'
   use 'lewis6991/gitsigns.nvim'
+--  use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'akinsho/bufferline.nvim', 
     requires = 'nvim-tree/nvim-web-devicons'

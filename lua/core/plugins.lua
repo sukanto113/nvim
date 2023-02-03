@@ -58,12 +58,15 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
   }
-
+	use "akinsho/toggleterm.nvim"
+-- Packer
+	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+	-- require('diffview').setup()
 	-- Theme
 	use 'ellisonleao/gruvbox.nvim'
 	use 'arcticicestudio/nord-vim'
 	use 'navarasu/onedark.nvim'
-
+  use 'folke/tokyonight.nvim'
 
 
 

@@ -1,6 +1,4 @@
-local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<c-p>', builtin.find_files, {})
 -- This is your opts table
 require("telescope").setup {
 	defaults = {

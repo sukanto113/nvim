@@ -13,7 +13,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'ellisonleao/gruvbox.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'moll/vim-bbye'
@@ -52,12 +51,22 @@ return require('packer').startup(function(use)
    'nvim-telescope/telescope.nvim',
    requires = { {'nvim-lua/plenary.nvim'} }
   }
+	use {'nvim-telescope/telescope-ui-select.nvim' }
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
   }
+
+	-- Theme
+	use 'ellisonleao/gruvbox.nvim'
+	use 'arcticicestudio/nord-vim'
+	use 'navarasu/onedark.nvim'
+
+
+
+
 	-- use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
   -- My plugins here
   -- use 'foo1/bar1.nvim'

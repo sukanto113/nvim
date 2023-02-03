@@ -24,7 +24,8 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
 	vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
 	vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
-	vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+	-- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+	vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, bufopts)
 	vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
@@ -39,7 +40,7 @@ require 'lspconfig'.sumneko_lua.setup {
 				version = 'LuaJIT',
 			},
 			diagnostics = {
-				globals = { 'vim' },
+				globals = { 'vim', 'require' },
 			},
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true),

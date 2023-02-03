@@ -1,4 +1,4 @@
-require 'nvim-treesitter.install'.compilers = {"gcc"}
+require 'nvim-treesitter.install'.compilers = {"zig"}
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {'lua', 'json', 'html'},

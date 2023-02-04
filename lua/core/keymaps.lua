@@ -1,5 +1,5 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = ';'
+vim.g.maplocalleader = ';'
 
 -- window riding keymaps
 vim.keymap.set('i', 'jj', '<Esc>')
@@ -34,3 +34,23 @@ vim.keymap.set('n', '<leader>p', '"+p', opts)
 
 -- escape from terminal mode
 vim.keymap.set('t', '<C-\\>', "<C-\\><C-n>", opts)
+
+-- configer lazygit
+local Terminal  = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+function _lazygit_toggle()
+  lazygit:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<leader>l", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+
+-- hop key bindings
+local hop = require('hop')
+local directions = require('hop.hint').HintDirection
+vim.keymap.set('', 'f', function()
+  hop.hint_char1({ current_line_only = false })
+end, {remap=true})
+vim.keymap.set('', 't', function()
+  hop.hint_char1({ current_line_only = false, hint_offset = -1 })
+end, {remap=true})
+

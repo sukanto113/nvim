@@ -59,6 +59,10 @@ return require('packer').startup(function(use)
     },
   }
 	use "akinsho/toggleterm.nvim"
+	use 'phaazon/hop.nvim'
+  use 'voldikss/vim-floaterm'
+  use 'ptzz/lf.vim'
+
 -- Packer
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 	-- require('diffview').setup()
@@ -67,8 +71,6 @@ return require('packer').startup(function(use)
 	use 'arcticicestudio/nord-vim'
 	use 'navarasu/onedark.nvim'
   use 'folke/tokyonight.nvim'
-
-
 
 	-- use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
   -- My plugins here

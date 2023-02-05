@@ -62,9 +62,11 @@ return require('packer').startup(function(use)
 	use 'phaazon/hop.nvim'
   use 'voldikss/vim-floaterm'
   use 'ptzz/lf.vim'
+  use "lukas-reineke/indent-blankline.nvim"
 
 -- Packer
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+	use {"folke/which-key.nvim"}
 	-- require('diffview').setup()
 	-- Theme
 	use 'ellisonleao/gruvbox.nvim'

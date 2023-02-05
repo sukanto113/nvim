@@ -8,4 +8,6 @@ vim.expandtab = true
 vim.opt.cursorline = true
 vim.opt.listchars = { tab = "  ", eol = '↲', trail = '-'}
 vim.opt.list = true
-
+vim.g.lf_map_keys = 0
+vim.o.timeout = true
+vim.o.timeoutlen = 300

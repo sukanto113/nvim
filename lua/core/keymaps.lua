@@ -9,6 +9,11 @@ vim.keymap.set('n', '<C-j>', '<c-w>j', opts)
 vim.keymap.set('n', '<C-k>', '<c-w>k', opts)
 vim.keymap.set('n', '<C-l>', '<c-w>l', opts)
 
+vim.keymap.set('n', '<C-Up>', ":resize +1<CR>", opts)
+vim.keymap.set('n', '<C-Down>', ":resize -1<CR>", opts)
+vim.keymap.set('n', '<C-Left>', ":vertical resize -1<CR>", opts)
+vim.keymap.set('n', '<C-Right>', ":vertical resize +1<CR>", opts)
+
 vim.keymap.set('n', '<s-l>', ':bnext<cr>')
 vim.keymap.set('n', '<s-h>', ':bprev<cr>')
 vim.keymap.set('v', '>', '>gv')

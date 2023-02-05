@@ -1,6 +1,6 @@
 require('core.plugins')
 require('core.plugin_config')
-require('core.options')
 require('src')
 require('core.theme')
 require('core.keymaps')
+require('core.options')

@@ -12,6 +12,7 @@ local mappings = {
 	x = { "<cmd>close<CR>", "Close Window" },
 	p = { '"+p', "Paste" },
 	y = { '"+yy', "Copy Line"},	
+	["/"] = { "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", "Comment" },
 
 	f = {
     name = "Find",

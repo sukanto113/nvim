@@ -10,4 +10,6 @@ require("core.plugin_config.toggleterm")
 require("core.plugin_config.hop")
 require("core.plugin_config.indent-blankline")
 require("core.plugin_config.whichkey")
+require("core.plugin_config.trouble")
+require("core.plugin_config.stratify")
 -- require("flutter-tools").setup{}

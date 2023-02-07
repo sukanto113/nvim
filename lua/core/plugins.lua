@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
   use 'moll/vim-bbye'
   use 'lewis6991/gitsigns.nvim'
 	use 'L3MON4D3/LuaSnip'
+	use 'folke/trouble.nvim'
+	use 'mhinz/vim-startify'
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",

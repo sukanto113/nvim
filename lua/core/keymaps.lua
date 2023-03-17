@@ -30,12 +30,12 @@ vim.keymap.set('v', 'q', '<Esc>')
 vim.keymap.set('t', '<C-\\>', "<C-\\><C-n>", opts)
 
 -- hop key bindings
-local hop = require('hop')
-local directions = require('hop.hint').HintDirection
-vim.keymap.set('', 'f', function()
-  hop.hint_char1({ current_line_only = false })
-end, {remap=true})
-vim.keymap.set('', 't', function()
-  hop.hint_char1({ current_line_only = false, hint_offset = -1 })
-end, {remap=true})
+-- local hop = require('hop')
+-- local directions = require('hop.hint').HintDirection
+-- vim.keymap.set('', 'f', function()
+--   hop.hint_char1({ current_line_only = false })
+-- end, {remap=true})
+-- vim.keymap.set('', 't', function()
+--   hop.hint_char1({ current_line_only = false, hint_offset = -1 })
+-- end, {remap=true})
 

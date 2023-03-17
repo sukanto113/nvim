@@ -15,3 +15,5 @@ vim.api.nvim_command(':highlight WinSeparator guibg=None')
 vim.api.nvim_command(':set laststatus=3')
 vim.api.nvim_command[[:set winbar=%=%m\ %f]]
 vim.cmd [[:set colorcolumn=80]]
+vim.cmd [[:set foldmethod=syntax]]
+
